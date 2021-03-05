@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-size: 100%;
+  background-image: url(./assets/header.svg);
+  background-repeat: no-repeat;
+  color: white;
+  letter-spacing: 2px;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.site-title {
+  width: 100%;
+}
+
+header h1 {
+  font-size: 35px;
+}
+
+header h4 {
+  font-size: 15px;
+}
+
+body {
+  color: #4f4f4f;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  font-size: 16px;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #5a0d5c;
+  padding: 7vh 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.menu a:hover {
+  background: #5a0d5c;
+  color: white;
+}
+
+.menu ul {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.menu li {
+  list-style: none;
+}
+
+.aboutme {
+  padding-top: 5vh;
+  padding-left: 30vh;
+  padding-right: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subtitulo {
+  padding-bottom: 4vh;
+  font-size: 20px;
+}
+
+.aboutme p {
+  padding-right: 10vh;
+  padding-bottom: 10vh;
+}
+
+.fotoperfil {
+  height: auto;
+  width: 40vh;
+}
+
+.contato {
+  width: 40vh;
+}
+
+.contato a {
+  color: #8c0c5c;
+  font-size: 36px;
+  transition: all 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #5a0d5c;
+  color: #5a0d5c;
+}
+
+.contatoicones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.svgbody {
+  position: absolute;
+}
+
+.projetos {
+  position: relative;
+  padding-top: 5vh;
+  padding-left: 30vh;
+  padding-right: 30vh;
+}
+
+.projetos .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projetos p {
+  padding-right: 5vh;
+}
+
+.card {
+  width: 50%;
+}
