@@ -52,7 +52,7 @@ body {
 .menu a {
   text-decoration: none;
   color: #5a0d5c;
-  padding: 7vh 20px;
+  padding: 10% 20px;
   transition: background-color 1s, color 1s;
 }
 
@@ -85,9 +85,12 @@ body {
   font-size: 20px;
 }
 
-.aboutme p {
+.perfil {
   padding-right: 10vh;
-  padding-bottom: 10vh;
+}
+
+.skills {
+  padding-top: 5vh;
 }
 
 .fotoperfil {
@@ -96,7 +99,15 @@ body {
 }
 
 .contato {
-  width: 40vh;
+  width: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contato h4 {
+  text-align: center;
+  padding-bottom: 5vh;
+  font-size: 20px;
 }
 
 .contato a {
@@ -117,27 +128,76 @@ body {
   justify-content: space-between;
 }
 
-.svgbody {
-  position: absolute;
-}
-
 .projetos {
   position: relative;
+}
+
+/* .svg-container {
+  position: relative;
+  z-index: -1;
+} */
+
+.container-projetos {
+  position: absolute;
+  top: 5%;
   padding-top: 5vh;
   padding-left: 30vh;
   padding-right: 30vh;
 }
 
-.projetos .container {
+.projetos .container-flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
-.projetos p {
+.texto-projeto {
   padding-right: 5vh;
 }
 
+.img-projeto {
+  width: 20vh;
+  height: 20vh;
+
+}
+
+.img-quiz {
+  width: 40vh;
+  height: auto;
+}
+
 .card {
-  width: 50%;
+padding: 5vh;
+display: flex;
+flex-direction: column;
+max-width: 70vh;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+
+}
+
+.card h3 {
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+footer a, section a{
+  text-decoration: none;
+  color:#8c0c5c;
+  transition: all 1s;
+}
+
+footer a:hover, section a:hover{
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #5a0d5c;
+  color: #5a0d5c;
 }
