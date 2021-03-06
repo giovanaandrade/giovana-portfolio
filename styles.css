@@ -6,12 +6,12 @@
 }
 
 header {
-  background-size: 100%;
+  background-size: cover;
   background-image: url(./assets/header.svg);
   background-repeat: no-repeat;
   color: white;
   letter-spacing: 2px;
-  height: 60vh;
+  height: 70%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -19,9 +19,6 @@ header {
   justify-content: center;
 }
 
-.site-title {
-  width: 100%;
-}
 
 header h1 {
   font-size: 35px;
@@ -72,12 +69,15 @@ body {
 
 .aboutme {
   padding-top: 5vh;
-  padding-left: 30vh;
-  padding-right: 30vh;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.perfil {
+  max-width: 70%;
 }
 
 .subtitulo {
@@ -85,23 +85,74 @@ body {
   font-size: 20px;
 }
 
-.perfil {
-  padding-right: 10vh;
-}
-
 .skills {
   padding-top: 5vh;
 }
 
 .fotoperfil {
+  width: 100%;
+  min-width: 200px;
   height: auto;
-  width: 40vh;
+  padding-left: 2%;
+}
+
+
+
+.projetos {
+  background-image: url(./assets/body.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  padding-left: 10%;
+  padding-bottom: 5%;
+
+}
+.container-projetos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.img-projeto {
+  width: 8em;
+  height: auto;
+
+}
+
+.img-quiz {
+  width: 18em;
+  height: auto;
+}
+
+.card {
+padding: 3%;
+display: flex;
+max-width: 40%;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+
+}
+
+.card h3 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .contato {
-  width: 60vh;
+  padding-bottom: 5%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .contato h4 {
@@ -128,66 +179,11 @@ body {
   justify-content: space-between;
 }
 
-.projetos {
-  position: relative;
-}
-
-/* .svg-container {
-  position: relative;
-  z-index: -1;
-} */
-
-.container-projetos {
-  position: absolute;
-  top: 5%;
-  padding-top: 5vh;
-  padding-left: 30vh;
-  padding-right: 30vh;
-}
-
-.projetos .container-flex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-}
-
-.texto-projeto {
-  padding-right: 5vh;
-}
-
-.img-projeto {
-  width: 20vh;
-  height: 20vh;
-
-}
-
-.img-quiz {
-  width: 40vh;
-  height: auto;
-}
-
-.card {
-padding: 5vh;
-display: flex;
-flex-direction: column;
-max-width: 70vh;
-align-items: center;
-text-align: center;
-justify-content: space-between;
-
-}
-
-.card h3 {
-  text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 3vh;
-}
-
 footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 3%;
 }
 
 footer a, section a{
