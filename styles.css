@@ -98,7 +98,6 @@ body {
 }
 
 
-
 .projetos {
   background-image: url(./assets/body.svg);
   background-size: cover;
@@ -108,7 +107,6 @@ body {
   flex-direction: column;
   margin:auto;
   padding-bottom: 5%;
-  justify-content: center;
   text-align: center;
 
 }
