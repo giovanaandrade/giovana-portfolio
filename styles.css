@@ -68,12 +68,13 @@ body {
 }
 
 .aboutme {
-  padding-top: 5vh;
+  padding-top: 5%;
   width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 4%;
 }
 
 .perfil {
@@ -81,12 +82,12 @@ body {
 }
 
 .subtitulo {
-  padding-bottom: 4vh;
+  padding-bottom: 4%;
   font-size: 20px;
 }
 
 .skills {
-  padding-top: 5vh;
+  padding-top: 4%;
 }
 
 .fotoperfil {
@@ -106,10 +107,12 @@ body {
   display: flex;
   flex-direction: column;
   margin:auto;
-  padding-left: 10%;
   padding-bottom: 5%;
+  justify-content: center;
+  text-align: center;
 
 }
+
 .container-projetos {
   display: flex;
   flex-direction: row;
@@ -147,7 +150,7 @@ justify-content: space-between;
 }
 
 .contato {
-  padding-bottom: 5%;
+  padding-bottom: 3%;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -157,7 +160,7 @@ justify-content: space-between;
 
 .contato h4 {
   text-align: center;
-  padding-bottom: 5vh;
+  padding-bottom: 8%;
   font-size: 20px;
 }
 
