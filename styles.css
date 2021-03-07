@@ -19,7 +19,6 @@ header {
   justify-content: center;
 }
 
-
 header h1 {
   font-size: 35px;
 }
@@ -70,6 +69,7 @@ body {
 .aboutme {
   padding-top: 5%;
   width: 80%;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -77,17 +77,41 @@ body {
   padding-bottom: 4%;
 }
 
-.perfil {
-  max-width: 70%;
+.container-perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .subtitulo {
-  padding-bottom: 4%;
   font-size: 20px;
 }
 
-.skills {
-  padding-top: 4%;
+.botao-curriculo {
+  font-size: 16px;
+  padding: 0.7em;
+  background: #ffffff;
+  border: solid #5a0d5c 2px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  text-decoration: none;
+  color: #5a0d5c;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  transition: all 1s;
+}
+
+.botao-curriculo:hover,
+.botao-curriculo:active {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: #ffffff;
+  background-color: #5a0d5c;
+  border: solid #5a0d5c 2px;
+  text-decoration: none;
 }
 
 .fotoperfil {
@@ -97,7 +121,6 @@ body {
   padding-left: 2%;
 }
 
-
 .projetos {
   background-image: url(./assets/body.svg);
   background-size: cover;
@@ -105,13 +128,12 @@ body {
   padding-top: 3%;
   display: flex;
   flex-direction: column;
-  margin:auto;
+  margin: auto;
   padding-bottom: 5%;
   text-align: center;
-
 }
 
-.projetos  h4 {
+.projetos h4 {
   font-size: 20px;
   padding-bottom: 4%;
 }
@@ -123,11 +145,9 @@ body {
   flex-wrap: wrap;
 }
 
-
 .img-projeto {
   width: 8em;
   height: auto;
-
 }
 
 .img-quiz {
@@ -136,14 +156,13 @@ body {
 }
 
 .card {
-padding: 3%;
-display: flex;
-max-width: 40%;
-flex-direction: column;
-align-items: center;
-text-align: center;
-justify-content: space-between;
-
+  padding: 3%;
+  display: flex;
+  max-width: 40%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .card h3 {
@@ -192,13 +211,15 @@ footer {
   padding-bottom: 3%;
 }
 
-footer a, section a{
+footer a,
+section a {
   text-decoration: none;
-  color:#8c0c5c;
+  color: #8c0c5c;
   transition: all 1s;
 }
 
-footer a:hover, section a:hover{
+footer a:hover,
+section a:hover {
   text-decoration: none;
   text-shadow: 1px 1px 3px #5a0d5c;
   color: #5a0d5c;
