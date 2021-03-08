@@ -106,7 +106,8 @@ header h4 {
     float: right;
     display: flex;
     height: 7vh;
-    padding-right: 2%;
+    padding-left: 8%;
+    padding-right: 5%;
   }
 
   .menu.responsive {
@@ -120,6 +121,7 @@ header h4 {
     justify-content: space-around;
     flex-wrap: wrap;
     padding-left: 3%;
+    padding-top: 2%;
   }
 
   .menu.responsive a.icon {
@@ -127,6 +129,8 @@ header h4 {
     right: 0;
     top: 0;
     display: flex;
+    padding-left: 8%;
+    padding-right: 5%;
   }
   .menu.responsive a {
     float: none;
