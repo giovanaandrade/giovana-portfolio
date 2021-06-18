@@ -1,6 +1,8 @@
 <template>
   <NavMenu />
+
   <div class="container-page">
+    <button @click="toggleTranslate()">Translate</button>
     <div class="container">
       <div class="component">
         <router-view v-slot="{ Component }">
@@ -16,9 +18,11 @@
 <script>
 import NavMenu from "@/components/NavMenu.vue";
 import Footer from "./components/Footer.vue";
+import { mapActions } from "vuex";
 
 export default {
   components: { NavMenu, Footer },
+  methods: { ...mapActions(["toggleTranslate"]) },
 };
 </script>
 

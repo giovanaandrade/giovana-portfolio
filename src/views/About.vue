@@ -1,34 +1,41 @@
 <template>
   <div class="about">
-    <h3>About Me</h3>
+    <h3>
+      {{ this.getterLanguage.about.title }}
+    </h3>
     <p>
-      Nasci e moro no Rio Grande do Sul, tenho 25 anos, sou viciada em Netflix,
-      amo dançar e sou programadora. Minha trajetória profissional começou um
-      pouco distante da tecnologia, sou graduada em Psicologia e apesar de
-      gostar muito da área, não foi nela que me encontrei. Tive meus primeiros
-      contatos com HTML e CSS lá pelos meus 12 anos ao estilizar um blog, mas
-      depois deixei o meu lado curioso por tecnologia um pouco adormecido. Em
-      2020, comecei a fazer cursos online de programação e percebi que era isso
-      que eu queria fazer profissionalmente. Em 2021, ingressei na graduação em
-      Análise e Desenvolvimento de Sistemas e atualmente procuro uma
-      oportunidade para ingressar na carreira. Fiz cursos tanto de backend,
-      quanto frontend e tive a oportunidade de trabalhar em equipe e desenvolver
-      alguns projetos, que podem ser encontrados no meu GitHub. Sinta-se à
-      vontade para entrar em contato comigo!
+      {{ this.getterLanguage.about.description }}
     </p>
 
-    <h4 class="subtitulo" id="habilidades">Habilidades</h4>
+    <h4 class="subtitulo" id="habilidades">
+      {{ this.getterLanguage.about.skills }}
+    </h4>
+
     <div class="skills">
       <p>HTML, CSS, React e .NET</p>
     </div>
 
     <div class="curriculo">
       <a href="./assets/Currículo.pdf" target="_blank" download>
-        <button class="botao-curriculo">Baixar currículo</button>
+        <button class="botao-curriculo">
+          Download {{ this.getterLanguage.about.curriculum }}
+        </button>
       </a>
     </div>
   </div>
 </template>
+
+<script>
+import { mapGetters, mapActions } from "vuex";
+export default {
+  name: "About",
+  computed: mapGetters(["getterLanguage"]),
+
+  methods: {
+    ...mapActions(["changeLanguage"]),
+  },
+};
+</script>
 
 <style>
 .about {

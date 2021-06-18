@@ -1,0 +1,29 @@
+{ 
+    "english": {
+        "about": {
+            "title": "About Me",
+            "description": "hello",
+            "skills": "Skills",
+            "curriculum": "Curriculum"
+
+        },
+        "projects": [{
+            "title": "Cotton Candy",
+            "description": "blabla"
+        },
+    { "title": "InterQuiz",
+        "description": "bla"
+
+    }]
+        
+    },
+
+    "portuguese" : {
+        "about": {
+        "title": "Sobre Mim",
+        "description": "ola",
+        "skills": "Habilidades",
+        "curriculum": "Currículo"
+        }
+    }
+}

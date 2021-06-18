@@ -2,11 +2,19 @@
   <div class="home">
     <div class="title">
       <div class="hello">
-        <h1>Hello, I'm</h1>
-        <h1 class="name">Giovana!</h1>
-      </div>
+        <span v-if="getterTranslate">
+          <h1>Hello, I'm</h1>
+          <h1 class="name">Giovana!</h1>
 
-      <h3>Full Stack Developer</h3>
+          <h3>Full Stack Developer</h3>
+        </span>
+        <span v-else>
+          <h1>Olá, eu sou a</h1>
+          <h1 class="name">Giovana!</h1>
+
+          <h3>Desenvolvedora Full Stack</h3>
+        </span>
+      </div>
     </div>
 
     <img
@@ -18,14 +26,17 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   name: "Home",
+  computed: mapGetters(["getterTranslate"]),
 };
 </script>
 
 <style scoped>
 .hello {
   padding: 1rem;
+  align-items: center;
 }
 .home {
   padding: 2%;

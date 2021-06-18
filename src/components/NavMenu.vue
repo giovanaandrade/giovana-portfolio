@@ -1,19 +1,27 @@
 <template>
   <nav class="menu">
     <ul>
-      <li><router-link class="link" to="/">Home</router-link></li>
-      <li><router-link class="link" to="/about">About</router-link></li>
-      <li><router-link class="link" to="/projects">Projects</router-link></li>
-      <li>
-        <router-link class="link" to="/contact">Contact</router-link>
+      <li v-for="(route, index) in routes" :key="index">
+        <router-link class="link" :to="route.path"
+          ><span v-if="getterTranslate">{{ route.name }}</span
+          ><span v-else>{{ route.nome }}</span></router-link
+        >
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+import { routes } from "@/router/index.js";
 export default {
   name: "NavMenu",
+  computed: mapGetters(["getterTranslate"]),
+  data() {
+    return {
+      routes,
+    };
+  },
 };
 </script>
 
