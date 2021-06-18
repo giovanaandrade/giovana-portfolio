@@ -1,81 +1,20 @@
 <template>
   <div class="projects">
     <h3>{{ getterLanguage.projectsPage.title }}</h3>
-    <div
-      v-for="(project, index) in getterLanguage.projectsPage.projects"
-      :key="index"
-    >
-      {{ project.title }} {{ project.description }}
-    </div>
-
-    <h3>Projetos</h3>
-
     <div class="container-projetos">
-      <div class="card">
-        <a
-          href="https://github.com/giovanaandrade/Cotton-Candy"
-          target="_blank"
-        >
-          <img
-            class="img-projeto"
-            src="@/assets/cottoncandy.png"
-            alt="Cotton Candy"
-          />
+      <div
+        v-for="(project, index) in getterLanguage.projectsPage.projects"
+        :key="index"
+        class="card"
+      >
+        <a :href="project.url" target="_blank">
+          <img class="img-projeto" :src="project.img" :alt="project.title" />
         </a>
         <div class="texto-projeto">
-          <a
-            href="https://github.com/giovanaandrade/Cotton-Candy"
-            target="_blank"
-          >
-            <h4>Cotton Candy</h4>
+          <a :href="project.url" target="_blank">
+            <h4>{{ project.title }}</h4>
           </a>
-          <p>
-            Projeto de rede social para mulheres desenvolvedoras. Desenvolvido
-            em .NET e Angular. Trabalho para conclusão de curso de formação em
-            back-end .NET.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://github.com/giovanaandrade/BiscoitodaSorte"
-          target="_blank"
-        >
-          <img
-            class="img-projeto"
-            src="@/assets/biscoitodasorte.png"
-            alt="Biscoito da Sorte"
-          />
-        </a>
-        <div>
-          <a
-            href="https://github.com/giovanaandrade/BiscoitodaSorte"
-            target="_blank"
-          >
-            <h4>Biscoito da Sorte</h4>
-          </a>
-          <p>
-            Aplicativo que sorteia um "biscoito da sorte" com um poema. Projeto
-            desenvolvido em Kotlin no Android Studio para conclusão de curso de
-            desenvolvimento de aplicativos.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <a href="http://interquiz.giovanaandrade.vercel.app/" target="_blank">
-          <img class="img-quiz" src="@/assets/interquiz.png" alt="InterQuiz" />
-        </a>
-        <div class="texto-projeto">
-          <a href="http://interquiz.giovanaandrade.vercel.app/" target="_blank">
-            <h4>InterQuiz</h4>
-          </a>
-          <p>
-            Quiz com perguntas e respostas, mostrando a pontuação no final.
-            Desenvolvido em React e NextJS e deploy feito na Vercel. Projeto
-            realizado durante Imersão da Alura
-          </p>
+          <p>{{ project.description }}</p>
         </div>
       </div>
     </div>
