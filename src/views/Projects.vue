@@ -1,10 +1,13 @@
 <template>
   <div class="projects">
-    <div v-if="changeLanguage()">
-      <div v-for="(project, index) in getterLanguage.projects" :key="index">
-        {{ this.getterLanguage.project.title }} {{ project.description }}
-      </div>
+    <h3>{{ getterLanguage.projectsPage.title }}</h3>
+    <div
+      v-for="(project, index) in getterLanguage.projectsPage.projects"
+      :key="index"
+    >
+      {{ project.title }} {{ project.description }}
     </div>
+
     <h3>Projetos</h3>
 
     <div class="container-projetos">
@@ -80,19 +83,10 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
-import db from "@/db.json";
+import { mapGetters } from "vuex";
 export default {
   name: "Projects",
   computed: mapGetters(["getterLanguage"]),
-  data() {
-    return {
-      db,
-    };
-  },
-  methods: {
-    ...mapActions(["changeLanguage"]),
-  },
 };
 </script>
 

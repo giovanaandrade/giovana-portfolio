@@ -1,14 +1,14 @@
 <template>
   <div class="about">
     <h3>
-      {{ this.getterLanguage.about.title }}
+      {{ this.getterLanguage.aboutPage.title }}
     </h3>
     <p>
-      {{ this.getterLanguage.about.description }}
+      {{ this.getterLanguage.aboutPage.description }}
     </p>
 
     <h4 class="subtitulo" id="habilidades">
-      {{ this.getterLanguage.about.skills }}
+      {{ this.getterLanguage.aboutPage.skills }}
     </h4>
 
     <div class="skills">
@@ -18,7 +18,7 @@
     <div class="curriculo">
       <a href="./assets/Currículo.pdf" target="_blank" download>
         <button class="botao-curriculo">
-          Download {{ this.getterLanguage.about.curriculum }}
+          Download {{ this.getterLanguage.aboutPage.curriculum }}
         </button>
       </a>
     </div>

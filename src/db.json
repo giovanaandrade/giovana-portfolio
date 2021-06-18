@@ -1,29 +1,45 @@
 { 
     "english": {
-        "about": {
+        "aboutPage": {
             "title": "About Me",
             "description": "hello",
             "skills": "Skills",
             "curriculum": "Curriculum"
 
         },
-        "projects": [{
-            "title": "Cotton Candy",
-            "description": "blabla"
-        },
-    { "title": "InterQuiz",
-        "description": "bla"
-
-    }]
+        "projectsPage": { 
+            "title": "Projects",
+            "projects": 
+                [{
+                    "title": "Cotton Candy",
+                    "description": "blabla english"
+                    },
+                    {
+                    "title": "InterQuiz",
+                    "description":"blabla english2"
+                }]
         
+        }
     },
 
     "portuguese" : {
-        "about": {
+        "aboutPage": {
         "title": "Sobre Mim",
         "description": "ola",
         "skills": "Habilidades",
         "curriculum": "Currículo"
+        },
+        "projectsPage": { 
+            "title": "Projetos",
+            "projects": 
+                [{
+                    "title": "Cotton Candy",
+                    "description": "blabla em porutuges"
+                    },
+                    {
+                    "title": "InterQuiz",
+                    "description":"blabla em porutuges2"
+                }]
         }
     }
 }
