@@ -1,6 +1,10 @@
 <template>
   <div class="about">
-    <h1>Hello, I'm Giovana!</h1>
+    <div class="title">
+      <h1>Hello, I'm Giovana!</h1>
+      <h2>Full Stack Developer</h2>
+    </div>
+
     <img
       class="profile-photo"
       src="@/assets/fotoperfil.jpg"

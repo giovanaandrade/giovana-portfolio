@@ -4,7 +4,7 @@
     <div class="container">
       <div class="component">
         <router-view v-slot="{ Component }">
-          <transition name="page">
+          <transition name="page" mode="out-in">
             <component :is="Component" />
           </transition>
         </router-view>
@@ -45,8 +45,8 @@ body {
 .page-leave-active {
   transition: opacity 0.3s;
 }
-.page-enter,
-.page-leave-active {
+.page-enter-from,
+.page-leave-to {
   opacity: 0;
 }
 .container-page {
