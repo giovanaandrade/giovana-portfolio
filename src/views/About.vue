@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <h3>About Me</h3>
     <p>
       Nasci e moro no Rio Grande do Sul, tenho 25 anos, sou viciada em Netflix,
       amo dançar e sou programadora. Minha trajetória profissional começou um
@@ -30,6 +31,13 @@
 </template>
 
 <style>
+.about {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: space-around;
+}
 .botao-curriculo {
   font-size: 16px;
   padding: 0.7em;

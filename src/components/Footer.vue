@@ -18,7 +18,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 footer {
   color: white;
   display: flex;

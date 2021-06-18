@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h4>Projetos</h4>
+  <div class="projects">
+    <h3>Projetos</h3>
 
     <div class="container-projetos">
       <div class="card">
@@ -19,7 +19,7 @@
             href="https://github.com/giovanaandrade/Cotton-Candy"
             target="_blank"
           >
-            <h3>Cotton Candy</h3>
+            <h4>Cotton Candy</h4>
           </a>
           <p>
             Projeto de rede social para mulheres desenvolvedoras. Desenvolvido
@@ -45,7 +45,7 @@
             href="https://github.com/giovanaandrade/BiscoitodaSorte"
             target="_blank"
           >
-            <h3>Biscoito da Sorte</h3>
+            <h4>Biscoito da Sorte</h4>
           </a>
           <p>
             Aplicativo que sorteia um "biscoito da sorte" com um poema. Projeto
@@ -61,7 +61,7 @@
         </a>
         <div class="texto-projeto">
           <a href="http://interquiz.giovanaandrade.vercel.app/" target="_blank">
-            <h3>InterQuiz</h3>
+            <h4>InterQuiz</h4>
           </a>
           <p>
             Quiz com perguntas e respostas, mostrando a pontuação no final.
@@ -78,4 +78,37 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+.projects {
+  padding: 2%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-projetos {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.texto-projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
+.projects img {
+  height: 5rem;
+}
+</style>

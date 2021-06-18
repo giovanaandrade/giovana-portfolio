@@ -28,6 +28,18 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #8c0c5c;
+  transition: all 1s;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #5a0d5c;
+  color: #5a0d5c;
+}
 
 body {
   color: #4f4f4f;
@@ -60,7 +72,7 @@ body {
   width: 85vw;
   height: 70vh;
 }
-.component {
+/* .component {
   padding: 2%;
-}
+} */
 </style>

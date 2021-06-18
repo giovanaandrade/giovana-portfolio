@@ -17,7 +17,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+a,
+a:active,
+a:hover {
+  text-shadow: none;
+}
 .menu {
   background-color: white;
 }

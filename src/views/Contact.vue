@@ -1,6 +1,6 @@
 <template>
   <div class="contato">
-    <h4>Contact me</h4>
+    <h3>Contact me</h3>
     <div class="contatoicones">
       <a
         class="icons"
@@ -40,7 +40,7 @@ export default {};
 }
 
 .contato {
-  padding-bottom: 3%;
+  height: 70vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -48,27 +48,17 @@ export default {};
   justify-content: center;
 }
 
-.contato h4 {
+.contato h3 {
   text-align: center;
-  padding-bottom: 8%;
-  font-size: 20px;
-}
-
-.contato a {
-  color: #8c0c5c;
-  font-size: 36px;
-  transition: all 1s;
-}
-
-.contato a:active,
-.contato a:hover {
-  text-decoration: none;
-  text-shadow: 1px 1px 3px #5a0d5c;
-  color: #5a0d5c;
+  padding-bottom: 2rem;
 }
 
 .contatoicones {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.icons i {
+  font-size: 3rem;
 }
 </style>

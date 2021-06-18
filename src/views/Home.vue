@@ -1,8 +1,12 @@
 <template>
-  <div class="about">
+  <div class="home">
     <div class="title">
-      <h1>Hello, I'm Giovana!</h1>
-      <h2>Full Stack Developer</h2>
+      <div class="hello">
+        <h1>Hello, I'm</h1>
+        <h1 class="name">Giovana!</h1>
+      </div>
+
+      <h3>Full Stack Developer</h3>
     </div>
 
     <img
@@ -20,9 +24,24 @@ export default {
 </script>
 
 <style scoped>
-.about {
+.hello {
+  padding: 1rem;
+}
+.home {
+  padding: 2%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  color: #8c0c5c;
 }
 .profile-photo {
   height: 60vh;
