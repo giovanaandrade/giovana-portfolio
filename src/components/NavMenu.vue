@@ -3,7 +3,7 @@
     <ul>
       <li v-for="(route, index) in routes" :key="index">
         <router-link class="link" :to="route.path"
-          ><span v-if="getterTranslate">{{ route.name }}</span
+          ><span v-if="getterLanguage == db.english">{{ route.name }}</span
           ><span v-else>{{ route.nome }}</span></router-link
         >
       </li>
@@ -14,12 +14,14 @@
 <script>
 import { mapGetters } from "vuex";
 import { routes } from "@/router/index.js";
+import db from "@/db.json";
 export default {
   name: "NavMenu",
-  computed: mapGetters(["getterTranslate"]),
+  computed: mapGetters(["getterLanguage"]),
   data() {
     return {
       routes,
+      db,
     };
   },
 };

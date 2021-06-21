@@ -2,9 +2,9 @@
   <NavMenu />
 
   <div class="container-page">
-    <a @click="toggleTranslate()">English</a>
-
-    <button @click="toggleTranslate()">Translate</button>
+    <!-- ARRUMAR NAVBAR -->
+    <button @click="translateToEnglish()">English</button>
+    <button @click="translateToPortuguese()">Portugues</button>
     <div class="container">
       <div class="component">
         <router-view v-slot="{ Component }">
@@ -24,7 +24,7 @@ import { mapActions } from "vuex";
 
 export default {
   components: { NavMenu, Footer },
-  methods: { ...mapActions(["toggleTranslate"]) },
+  methods: { ...mapActions(["translateToEnglish", "translateToPortuguese"]) },
 };
 </script>
 
