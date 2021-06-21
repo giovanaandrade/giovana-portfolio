@@ -1,65 +1,126 @@
-{ 
-    "english": {
-        "aboutPage": {
-            "title": "About Me",
-            "description": "hello",
-            "skills": "Skills",
-            "curriculum": "Curriculum"
-
-        },
-        "projectsPage": { 
-            "title": "Projects",
-            "projects": 
-                [{
-                    "title": "Cotton Candy",
-                    "description": "blabla english",
-                    "url": "https://github.com/giovanaandrade/Cotton-Candy",
-                    "img": "./assets/cottoncandy.png"
-                    },
-                    {
-                    "title": "InterQuiz",
-                    "description":"blabla english2",
-                    "url": "http://interquiz.giovanaandrade.vercel.app/",
-                    "img": "@/assets/interquiz.png"
-                    },
-                    {
-                        "title": "Fortune Cookie",
-                        "description": " english",
-                        "url": "https://github.com/giovanaandrade/BiscoitodaSorte",
-                        "img": "@/assets/biscoitodasorte.png"   
-                }]
-        
-        }
+{
+    "english":{
+       "homePage":{
+          "title":"Hello, I'm",
+          "description":"Full Stack Developer"
+       },
+       "aboutPage":{
+          "title":"About Me",
+          "description":"hello",
+          "skills":"Skills",
+          "curriculum":"Curriculum"
+       },
+       "projectsPage":{
+          "title":"Projects",
+          "projects":[
+             {
+                "title":"Cotton Candy",
+                "description":"blabla english",
+                "url":"https://github.com/giovanaandrade/Cotton-Candy",
+                "img":"cottoncandy.png"
+             },
+             {
+                "title":"InterQuiz",
+                "description":"blabla english2",
+                "url":"http://interquiz.giovanaandrade.vercel.app/",
+                "img":"interquiz.svg"
+             },
+             {
+                "title":"Fortune Cookie",
+                "description":" english",
+                "url":"https://github.com/giovanaandrade/BiscoitodaSorte",
+                "img":"biscoitodasorte.png"
+             },
+             {
+                "title":"Weather App",
+                "description":"blablibla",
+                "url":"https://giovanaandrade.github.io/vue-weather/",
+                "img":"vueweather.svg"
+             }
+          ]
+       },
+       "contactPage":{
+          "title":"Contact Me",
+          "contacts":[
+             {
+                "class":"fab fa-linkedin-in",
+                "url":"https://www.linkedin.com/in/giovanadeandrade/"
+             },
+             {
+                "class":"fab fa-github",
+                "url":"https://github.com/giovanaandrade"
+             },
+             {
+                "class":"fab fa-medium-m",
+                "url":"http://medium.com/@giovanadandrade"
+             },
+             {
+                "class":"far fa-envelope",
+                "url":"mailto:giovanadandrade@gmail.com"
+             }
+          ]
+       }
     },
-
-    "portuguese" : {
-        "aboutPage": {
-        "title": "Sobre Mim",
-        "description": "ola",
-        "skills": "Habilidades",
-        "curriculum": "Currículo"
-        },
-        "projectsPage": { 
-            "title": "Projetos",
-            "projects": 
-                [{
-                        "title": "Cotton Candy",
-                        "description": "Projeto de rede social para mulheres desenvolvedoras. Desenvolvido em .NET e Angular como trabalho de conclusão para curso de formação em back-end.",
-                        "url": "https://github.com/giovanaandrade/Cotton-Candy",
-                        "img": "@/assets/cottoncandy.png"
-                    },
-                    {
-                        "title": "InterQuiz",
-                        "description":"Quiz com perguntas e respostas, mostrando a pontuação no final. Desenvolvido em React e NextJS e deploy feito na Vercel. Projeto realizado durante Imersão da Alura",
-                        "url": "http://interquiz.giovanaandrade.vercel.app/",
-                        "img": "@/assets/interquiz.png"
-                    },
-                    {
-                        "title": "Biscoito da Sorte",
-                        "description": "Aplicativo que sorteia um 'biscoito da sorte' com um poema. Projeto desenvolvido em Kotlin no Android Studio para conclusão de curso de desenvolvimento de aplicativos.",
-                        "url": "https://github.com/giovanaandrade/BiscoitodaSorte",
-                        "img": "@/assets/biscoitodasorte.png"
-                }]
-        }
+    "portuguese":{
+       "homePage":{
+          "title":"Olá, eu sou a",
+          "description":"Desenvolvedora Full Stack"
+       },
+       "aboutPage":{
+          "title":"Sobre Mim",
+          "description":"Nasci e moro no Rio Grande do Sul, tenho 25 anos, sou viciada em Netflix, amo dançar e sou programadora. Minha trajetória profissional começou um pouco distante da tecnologia, sou graduada em Psicologia e apesar de gostar muito da área, não foi nela que me encontrei. Tive meus primeiros contatos com HTML e CSS lá pelos meus 12 anos ao estilizar um blog, mas depois deixei o meu lado curioso por tecnologia um pouco adormecido. Em 2020, comecei a fazer cursos online de programação e percebi que era isso que eu queria fazer profissionalmente. Em 2021, ingressei na graduação em Análise e Desenvolvimento de Sistemas e atualmente procuro uma oportunidade para ingressar na carreira. Fiz cursos tanto de backend, quanto frontend e tive a oportunidade de trabalhar em equipe e desenvolver alguns projetos, que podem ser encontrados no meu GitHub. Sinta-se à vontade para entrar em contato comigo!",
+          "skills":"Habilidades",
+          "curriculum":"Currículo"
+       },
+       "projectsPage":{
+          "title":"Projetos",
+          "projects":[
+             {
+                "title":"Cotton Candy",
+                "description":"Projeto de rede social para mulheres desenvolvedoras. Desenvolvido em .NET e Angular como trabalho de conclusão para curso de formação em back-end.",
+                "url":"https://github.com/giovanaandrade/Cotton-Candy",
+                "img":"cottoncandy.png"
+             },
+             {
+                "title":"InterQuiz",
+                "description":"Quiz com perguntas e respostas, mostrando a pontuação no final. Desenvolvido em React e NextJS e deploy feito na Vercel. Projeto realizado durante Imersão da Alura",
+                "url":"http://interquiz.giovanaandrade.vercel.app/",
+                "img":"interquiz.svg"
+             },
+             {
+                "title":"Biscoito da Sorte",
+                "description":"Aplicativo que sorteia um 'biscoito da sorte' com um poema. Projeto desenvolvido em Kotlin no Android Studio para conclusão de curso de desenvolvimento de aplicativos.",
+                "url":"https://github.com/giovanaandrade/BiscoitodaSorte",
+                "img":"biscoitodasorte.png"
+             },
+             {
+                "title":"Weather App",
+                "description":"blablibla",
+                "url":"https://giovanaandrade.github.io/vue-weather/",
+                "img":"vueweather.svg"
+             }
+          ]
+       },
+       "contactPage":{
+          "title":"Meus contatos",
+          "contacts":[
+             {
+                "class":"fab fa-linkedin-in",
+                "url":"https://www.linkedin.com/in/giovanadeandrade/"
+             },
+             {
+                "class":"fab fa-github",
+                "url":"https://github.com/giovanaandrade"
+             },
+             {
+                "class":"fab fa-medium-m",
+                "url":"http://medium.com/@giovanadandrade"
+             },
+             {
+                "class":"far fa-envelope",
+                "url":"mailto:giovanadandrade@gmail.com"
+             }
+          ]
+       }
     }
-}
+ }

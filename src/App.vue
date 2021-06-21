@@ -2,6 +2,8 @@
   <NavMenu />
 
   <div class="container-page">
+    <a @click="toggleTranslate()">English</a>
+
     <button @click="toggleTranslate()">Translate</button>
     <div class="container">
       <div class="component">

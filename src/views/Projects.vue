@@ -8,7 +8,11 @@
         class="card"
       >
         <a :href="project.url" target="_blank">
-          <img class="img-projeto" :src="project.img" :alt="project.title" />
+          <img
+            class="img-projeto"
+            :src="require(`../assets/${project.img}`)"
+            :alt="project.title"
+          />
         </a>
         <div class="texto-projeto">
           <a :href="project.url" target="_blank">

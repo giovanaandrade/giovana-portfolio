@@ -5,11 +5,17 @@
       <a href="https://github.com/giovanaandrade" target="_blank"
         >Giovana de Andrade</a
       >
+      with
+      <a href="https://vuejs.org/" target="_blank"
+        ><i class="fab fa-vuejs"></i
+      ></a>
     </p>
     <p>
       Icons by
       <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> and
       <a href="https://www.flaticon.com/" target="_blank">FlatIcons</a>.
+      Illustrations by
+      <a href="https://2.flexiple.com/scale/home" target="_blank">Scale</a>.
     </p>
   </footer>
 </template>

@@ -1,28 +1,25 @@
 <template>
   <div class="contato">
-    <h3>Contact me</h3>
+    <h3>{{ getterLanguage.contactPage.title }}</h3>
     <div class="contatoicones">
-      <a
-        class="icons"
-        href="https://www.linkedin.com/in/giovanadeandrade/"
-        target="_blank"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <a class="icons" href="https://github.com/giovanaandrade" target="_blank"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a class="icons" href="http://medium.com/@giovanadandrade" target="_blank"
-        ><i class="fab fa-medium-m"></i
-      ></a>
-      <a class="icons" href="mailto:giovanadandrade@gmail.com"
-        ><i class="far fa-envelope"></i
-      ></a>
+      <div
+        v-for="(contact, index) in getterLanguage.contactPage.contacts"
+        :key="index"
+      >
+        <a class="icons" :href="contact.url" target="_blank">
+          <i :class="contact.class" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { mapGetters } from "vuex";
+export default {
+  name: "Contact",
+  computed: mapGetters(["getterLanguage"]),
+};
 </script>
 
 <style>
