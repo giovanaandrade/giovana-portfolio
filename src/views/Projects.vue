@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     <h3>{{ getterLanguage.projectsPage.title }}</h3>
-    <div class="container-projetos">
+    <div class="container">
       <div
         v-for="(project, index) in getterLanguage.projectsPage.projects"
         :key="index"
@@ -39,7 +39,7 @@ export default {
   height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -48,7 +48,16 @@ export default {
   flex-wrap: nowrap;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 40% 40%;
+  gap: 2rem 2rem;
+  grid-auto-flow: row;
+}
+
 .card {
+  width: 70%;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;

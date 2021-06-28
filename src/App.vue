@@ -2,9 +2,6 @@
   <NavMenu />
 
   <div class="container-page">
-    <!-- ARRUMAR NAVBAR -->
-    <button @click="translateToEnglish()">English</button>
-    <button @click="translateToPortuguese()">Portugues</button>
     <div class="container">
       <div class="component">
         <router-view v-slot="{ Component }">
@@ -20,11 +17,9 @@
 <script>
 import NavMenu from "@/components/NavMenu.vue";
 import Footer from "./components/Footer.vue";
-import { mapActions } from "vuex";
 
 export default {
   components: { NavMenu, Footer },
-  methods: { ...mapActions(["translateToEnglish", "translateToPortuguese"]) },
 };
 </script>
 
@@ -52,12 +47,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background: rgb(90, 13, 92);
-  /* background: linear-gradient(
-    90deg,
-    rgba(90, 13, 92, 0.9223039557619923) 0%,
-    rgba(140, 12, 92, 0.9054972330729166) 50%,
-    rgba(210, 207, 245, 1) 100%
-  ); */
 }
 .page-enter-active,
 .page-leave-active {
@@ -78,7 +67,4 @@ body {
   width: 85vw;
   height: 70vh;
 }
-/* .component {
-  padding: 2%;
-} */
 </style>

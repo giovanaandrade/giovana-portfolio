@@ -4,7 +4,6 @@
       <div class="hello">
         <h1>{{ getterLanguage.homePage.title }}</h1>
         <h1 class="name">Giovana!</h1>
-        <h3>{{ getterLanguage.homePage.description }}</h3>
       </div>
     </div>
     <img
@@ -39,6 +38,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .name {

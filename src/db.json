@@ -95,7 +95,7 @@
              },
              {
                 "title":"Weather App",
-                "description":"blablibla",
+                "description":"Aplicação que mostra a temperatura buscando pelo nome da cidade utilizando VueJs e API.",
                 "url":"https://giovanaandrade.github.io/vue-weather/",
                 "img":"vueweather.svg"
              }

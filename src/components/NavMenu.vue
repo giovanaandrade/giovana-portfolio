@@ -7,16 +7,21 @@
           ><span v-else>{{ route.nome }}</span></router-link
         >
       </li>
+      <li class="language">
+        <button @click="translateToEnglish()">English</button>
+        <button @click="translateToPortuguese()">Português</button>
+      </li>
     </ul>
   </nav>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 import { routes } from "@/router/index.js";
 import db from "@/db.json";
 export default {
   name: "NavMenu",
+  methods: { ...mapActions(["translateToEnglish", "translateToPortuguese"]) },
   computed: mapGetters(["getterLanguage"]),
   data() {
     return {
@@ -33,8 +38,36 @@ a:active,
 a:hover {
   text-shadow: none;
 }
+
 .menu {
   background-color: white;
+}
+
+.menu button {
+  margin: 0.2em;
+  padding: 0.5rem;
+  background: #ffffff;
+  border: solid #5a0d5c 0.15em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: #5a0d5c;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  transition: all 1s;
+}
+
+.menu button:hover,
+.menu button:active {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  color: #ffffff;
+  background-color: #5a0d5c;
+  border: solid #5a0d5c 0.15em;
+  text-decoration: none;
 }
 
 .menu .link {
@@ -63,6 +96,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .menu .icon {
@@ -70,7 +104,7 @@ a:hover {
   }
 
   .menu .link {
-    padding: 10% 20px;
+    padding: 2vh;
   }
 
   .menu .link:hover {
