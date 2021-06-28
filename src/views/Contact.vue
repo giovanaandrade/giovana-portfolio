@@ -1,6 +1,6 @@
 <template>
   <div class="contato">
-    <h3>{{ getterLanguage.contactPage.title }}</h3>
+    <h2>{{ getterLanguage.contactPage.title }}</h2>
     <div class="contatoicones">
       <div
         v-for="(contact, index) in getterLanguage.contactPage.contacts"
@@ -45,7 +45,7 @@ export default {
   justify-content: center;
 }
 
-.contato h3 {
+.contato h2 {
   text-align: center;
   padding-bottom: 2rem;
 }

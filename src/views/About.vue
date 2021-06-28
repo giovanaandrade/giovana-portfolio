@@ -1,15 +1,15 @@
 <template>
   <div class="about">
-    <h3>
+    <h2>
       {{ this.getterLanguage.aboutPage.title }}
-    </h3>
+    </h2>
     <p>
       {{ this.getterLanguage.aboutPage.description }}
     </p>
 
-    <h4 class="subtitulo" id="habilidades">
+    <h3 class="subtitulo" id="habilidades">
       {{ this.getterLanguage.aboutPage.skills }}
-    </h4>
+    </h3>
 
     <div class="skills">
       <p>HTML, CSS, React e .NET</p>
@@ -44,6 +44,7 @@ export default {
   flex-direction: column;
   height: 70vh;
   justify-content: space-around;
+  width: 95%;
 }
 .botao-curriculo {
   font-size: 16px;

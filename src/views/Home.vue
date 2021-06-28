@@ -4,7 +4,7 @@
       <div class="hello">
         <h1>{{ getterLanguage.homePage.title }}</h1>
         <h1 class="name">Giovana!</h1>
-        <h1>{{ getterLanguage.homePage.description }}</h1>
+        <h2>{{ getterLanguage.homePage.description }}</h2>
       </div>
     </div>
     <img
