@@ -38,8 +38,7 @@ a {
 a:active,
 a:hover {
   text-decoration: none;
-  text-shadow: 1px 1px 3px #5a0d5c;
-  color: #5a0d5c;
+  color: #79cfff;
 }
 
 body {

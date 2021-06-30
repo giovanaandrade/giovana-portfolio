@@ -62,7 +62,8 @@
           "form": {
              "name": "Your name",
              "email": "Your e-mail",
-             "message": "Write me a message!"
+             "message": "Write me a message!",
+             "button": "Send"
           }
        }
     },
@@ -129,7 +130,8 @@
           "form": {
             "name": "Seu nome",
             "email": "Seu e-mail",
-            "message": "Me envie uma mensagem!"
+            "message": "Me envie uma mensagem!",
+            "button": "Enviar"
          }
        }
     }

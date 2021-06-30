@@ -11,44 +11,21 @@
         </a>
       </div>
     </div>
-    <form
-      class="email-form"
-      action="https://formspree.io/f/myylppve"
-      method="POST"
-    >
-      <label for="name">
-        <input
-          id="name"
-          type="text"
-          name="name"
-          :placeholder="getterLanguage.contactPage.form.name"
-        />
-      </label>
-      <label for="e-mail">
-        <input
-          id="email"
-          type="email"
-          name="_replyto"
-          :placeholder="getterLanguage.contactPage.form.email"
-        />
-      </label>
-      <label for="message">
-        <textarea
-          id="message"
-          name="message"
-          :placeholder="getterLanguage.contactPage.form.message"
-          rows="5"
-        ></textarea>
-      </label>
-      <button type="submit">Send</button>
-    </form>
+    <ContactForm
+      :name="getterLanguage.contactPage.form.name"
+      :email="getterLanguage.contactPage.form.email"
+      :message="getterLanguage.contactPage.form.message"
+      :buttonText="getterLanguage.contactPage.form.button"
+    />
   </section>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
+import ContactForm from "../components/ContactForm.vue";
 export default {
   name: "Contact",
+  components: { ContactForm },
   computed: mapGetters(["getterLanguage"]),
 };
 </script>
@@ -75,57 +52,6 @@ export default {
 }
 
 .contact-icons i {
-  font-size: 3rem;
-}
-.email-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 40vh;
-}
-
-.email-form input {
-  border: none;
-  border-bottom: solid #5a0d5c 0.15em;
-  text-decoration: none;
-  color: #5a0d5c;
-  width: 100%;
-  padding: 0.5em;
-  margin: 0.5em;
-}
-
-.email-form textarea {
-  resize: none;
-  width: 100%;
-  border: none;
-  border-bottom: solid #5a0d5c 0.15em;
-  margin: 0.5em;
-}
-
-.email-form button {
-  margin: 0.5em;
-  padding: 0.7em;
-  background: #ffffff;
-  border: solid #5a0d5c 0.15em;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  text-decoration: none;
-  color: #5a0d5c;
-  cursor: pointer;
-  text-align: center;
-  transition: all 1s;
-  width: fit-content;
-}
-
-.email-form button:hover,
-.email-form button:active {
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  color: #ffffff;
-  background-color: #5a0d5c;
-  border: solid #5a0d5c 0.15em;
-  text-decoration: none;
+  font-size: 2.5rem;
 }
 </style>
