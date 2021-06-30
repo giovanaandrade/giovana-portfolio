@@ -58,7 +58,12 @@
                 "class":"far fa-envelope",
                 "url":"mailto:giovanadandrade@gmail.com"
              }
-          ]
+          ],
+          "form": {
+             "name": "Your name",
+             "email": "Your e-mail",
+             "message": "Write me a message!"
+          }
        }
     },
     "portuguese":{
@@ -120,7 +125,12 @@
                 "class":"far fa-envelope",
                 "url":"mailto:giovanadandrade@gmail.com"
              }
-          ]
+          ],
+          "form": {
+            "name": "Seu nome",
+            "email": "Seu e-mail",
+            "message": "Me envie uma mensagem!"
+         }
        }
     }
  }
