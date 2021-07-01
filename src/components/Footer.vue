@@ -42,7 +42,7 @@ footer a:hover {
   color: #79cfff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   footer {
     padding: 3vh;
   }

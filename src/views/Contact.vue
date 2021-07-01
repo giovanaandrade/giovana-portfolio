@@ -52,7 +52,7 @@ export default {
   font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .contact {
     width: 85%;
   }

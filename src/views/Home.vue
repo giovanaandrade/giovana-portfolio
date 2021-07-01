@@ -47,7 +47,7 @@ export default {
   height: 60vh;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .home {
     flex-direction: column;
   }

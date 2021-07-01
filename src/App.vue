@@ -1,5 +1,21 @@
 <template>
-  <NavMenu />
+  <transition name="page" mode="in-out">
+    <NavMenu v-if="showNav" />
+  </transition>
+  <div
+    class="navigation-icon"
+    :class="{ active: isBurgerActive }"
+    v-if="mobileView"
+    @click="
+      {
+        showNav = !showNav;
+        isBurgerActive = !isBurgerActive;
+      }
+    "
+  >
+    <i class="fas fa-bars"></i>
+  </div>
+  <NavMenu v-if="!mobileView" />
   <main class="container-page">
     <div class="container-component">
       <router-view v-slot="{ Component }">
@@ -17,6 +33,22 @@ import Footer from "./components/Footer.vue";
 
 export default {
   components: { NavMenu, Footer },
+  data: () => {
+    return {
+      mobileView: true,
+      showNav: false,
+      isBurgerActive: false,
+    };
+  },
+  methods: {
+    handleView() {
+      this.mobileView = window.innerWidth <= 700;
+    },
+  },
+  created() {
+    this.handleView();
+    window.addEventListener("resize", this.handleView);
+  },
 };
 </script>
 
@@ -93,12 +125,35 @@ h2 {
   opacity: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .container-component {
     height: 100%;
   }
-  body {
-    /* background-color: white; */
+  .container-page {
+    padding-top: 10vh;
   }
+
+  .navigation-icon i {
+    font-size: 1.5rem;
+    color: white;
+    padding: 2vh;
+    width: 100vw;
+    top: 0;
+    position: absolute;
+  }
+  .navigation-icon.active i {
+    color: #5a0d5c;
+  }
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.2s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+  transform: translateX(-100%);
+  transition: all 150ms ease-in 0s;
 }
 </style>

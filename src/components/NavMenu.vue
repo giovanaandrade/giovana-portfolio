@@ -7,7 +7,7 @@
           ><span v-else>{{ route.nome }}</span></router-link
         >
       </li>
-      <li>
+      <li class="language">
         <button @click="translateToEnglish()">English</button>
         <button @click="translateToPortuguese()">Português</button>
       </li>
@@ -72,5 +72,41 @@ export default {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    z-index: 0;
+  }
+
+  .menu-item {
+    width: 100vw;
+  }
+
+  .language {
+    order: -3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    display: block;
+    width: 100vw;
+  }
+
+  a {
+    display: block;
+  }
 }
 </style>

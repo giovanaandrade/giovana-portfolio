@@ -61,7 +61,7 @@ h4 {
   padding: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .container-projects {
     height: 100%;
   }

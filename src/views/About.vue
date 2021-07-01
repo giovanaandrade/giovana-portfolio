@@ -39,7 +39,7 @@ export default {
   width: 95%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .about {
     height: 100%;
     width: 100%;
