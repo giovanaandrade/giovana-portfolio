@@ -32,6 +32,7 @@ a {
   color: #8c0c5c;
   transition: all 1s;
 }
+
 a:active,
 a:hover {
   text-decoration: none;
@@ -69,11 +70,13 @@ button:active {
   justify-content: center;
   align-content: center;
 }
+
 .container-component {
   background-color: white;
   width: 85vw;
   height: 70vh;
 }
+
 h1 {
   font-size: 2rem;
 }
@@ -88,5 +91,14 @@ h2 {
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-component {
+    height: 100%;
+  }
+  body {
+    /* background-color: white; */
+  }
 }
 </style>

@@ -33,8 +33,8 @@ export default {
 
 <style scoped>
 .container-projects {
-  padding: 2%;
-  max-height: 70vh;
+  padding: 2vh;
+  height: 70vh;
   text-align: center;
 }
 
@@ -46,7 +46,7 @@ export default {
 }
 
 .card-project {
-  padding: 2%;
+  padding: 2vh;
   width: 47%;
   display: flex;
   flex-direction: column;
@@ -59,5 +59,14 @@ export default {
 
 h4 {
   padding: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-projects {
+    height: 100%;
+  }
+  .card-project {
+    width: 100%;
+  }
 }
 </style>

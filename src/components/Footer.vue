@@ -41,4 +41,10 @@ footer a:hover {
   text-shadow: 1px 1px 3px #8c0c5c;
   color: #79cfff;
 }
+
+@media only screen and (max-width: 600px) {
+  footer {
+    padding: 3vh;
+  }
+}
 </style>

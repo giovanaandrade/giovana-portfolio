@@ -34,18 +34,33 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
-
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-
 .name {
   color: #8c0c5c;
 }
 .profile-photo {
   height: 60vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    flex-direction: column;
+  }
+  .profile-photo {
+    max-height: 50vh;
+    padding: 2vh;
+  }
+  .hello {
+    text-align: center;
+  }
+  .title {
+    height: 40vh;
+    justify-content: center;
+  }
 }
 </style>

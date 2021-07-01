@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .contact {
   height: 70vh;
   width: 60%;
@@ -50,5 +50,11 @@ export default {
 
 .contact-icons i {
   font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    width: 85%;
+  }
 }
 </style>

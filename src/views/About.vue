@@ -22,24 +22,36 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   name: "About",
   computed: mapGetters(["getterLanguage"]),
-
-  methods: {
-    ...mapActions(["changeLanguage"]),
-  },
 };
 </script>
 
 <style>
 .about {
-  padding: 2%;
+  padding: 2vh;
   display: flex;
   flex-direction: column;
   height: 70vh;
   justify-content: space-around;
   width: 95%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .about p {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .about button {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
 }
 </style>
