@@ -1,7 +1,7 @@
 <template>
   <section class="contact">
     <h2>{{ getterLanguage.contactPage.title }}</h2>
-    <div class="contact-icons">
+    <article class="contact-icons">
       <div
         v-for="(contact, index) in getterLanguage.contactPage.contacts"
         :key="index"
@@ -10,8 +10,9 @@
           <i :class="contact.class" />
         </a>
       </div>
-    </div>
+    </article>
     <ContactForm
+      class="contact-form"
       :name="getterLanguage.contactPage.form.name"
       :email="getterLanguage.contactPage.form.email"
       :message="getterLanguage.contactPage.form.message"
@@ -38,12 +39,8 @@ export default {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.contact h2 {
+  justify-content: space-around;
   text-align: center;
-  padding-bottom: 2rem;
 }
 
 .contact-icons {

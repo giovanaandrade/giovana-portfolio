@@ -34,13 +34,10 @@ footer {
 }
 
 footer a {
-  text-decoration: none;
   color: #d2cff5;
-  transition: all 1s;
 }
 
 footer a:hover {
-  text-decoration: none;
   text-shadow: 1px 1px 3px #8c0c5c;
   color: #79cfff;
 }

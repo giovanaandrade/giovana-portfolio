@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <div class="title">
+  <section class="home">
+    <article class="title">
       <div class="hello">
         <h1>{{ getterLanguage.homePage.title }}</h1>
         <h1 class="name">Giovana!</h1>
         <h2>{{ getterLanguage.homePage.description }}</h2>
       </div>
-    </div>
+    </article>
     <img
       class="profile-photo"
       src="@/assets/fotoperfil.jpg"
       alt="Profile photo"
     />
-  </div>
+  </section>
 </template>
 
 <script>
