@@ -1,138 +1,138 @@
 {
-    "english":{
-       "homePage":{
-          "title":"Hello, I'm",
-          "description":"Full Stack Developer"
-       },
-       "aboutPage":{
-          "title":"About Me",
-          "description":"I was born and live in Brazil, I'm 26 years old. I love watching Netflix, dancing and programming. My first gradution was in Psychology and currently I'm studying System Analasys and Development.",
-          "skills":"Skills",
-          "curriculum":"Curriculum"
-       },
-       "projectsPage":{
-          "title":"Projects",
-          "projects":[
-             {
-                "title":"Cotton Candy",
-                "description":"A project for a social network for women developer. Developed with .NET and Angular, it was made for the conclusion of a backend course.",
-                "url":"https://github.com/giovanaandrade/Cotton-Candy",
-                "img":"cottoncandy.png"
-             },
-             {
-                "title":"InterQuiz",
-                "description":"An quiz about football developed with React.",
-                "url":"http://interquiz.giovanaandrade.vercel.app/",
-                "img":"interquiz.svg"
-             },
-             {
-                "title":"Fortune Cookie",
-                "description":"App developed with Kotlin in Android Studio. It draws an random fortune cookie with a poem.",
-                "url":"https://github.com/giovanaandrade/BiscoitodaSorte",
-                "img":"biscoitodasorte.png"
-             },
-             {
-                "title":"Weather App",
-                "description":"Developed with VueJS and Open Weather API. It searchs the temperature for the city.",
-                "url":"https://giovanaandrade.github.io/vue-weather/",
-                "img":"vueweather.svg"
-             }
-          ]
-       },
-       "contactPage":{
-          "title":"Contact Me",
-          "contacts":[
-             {
-                "class":"fab fa-linkedin-in",
-                "url":"https://www.linkedin.com/in/giovanadeandrade/"
-             },
-             {
-                "class":"fab fa-github",
-                "url":"https://github.com/giovanaandrade"
-             },
-             {
-                "class":"fab fa-medium-m",
-                "url":"http://medium.com/@giovanadandrade"
-             },
-             {
-                "class":"far fa-envelope",
-                "url":"mailto:giovanadandrade@gmail.com"
-             }
-          ],
-          "form": {
-             "name": "Your name",
-             "email": "Your e-mail",
-             "message": "Write me a message!",
-             "button": "Send"
-          }
-       }
+  "english": {
+    "homePage": {
+      "title": "Hello, I'm",
+      "description": "Full Stack Developer"
     },
-    "portuguese":{
-       "homePage":{
-          "title":"Olá, eu sou a",
-          "description":"Desenvolvedora Full Stack"
-       },
-       "aboutPage":{
-          "title":"Sobre Mim",
-          "description":"Nasci e moro no Rio Grande do Sul, tenho 26 anos, sou viciada em Netflix, amo dançar e sou programadora. Minha trajetória profissional começou um pouco distante da tecnologia, sou graduada em Psicologia e apesar de gostar muito da área, não foi nela que me encontrei. Tive meus primeiros contatos com HTML e CSS lá pelos meus 12 anos ao estilizar um blog, mas depois deixei o meu lado curioso por tecnologia um pouco adormecido. Em 2020, comecei a fazer cursos online de programação e percebi que era isso que eu queria fazer profissionalmente. Em 2021, ingressei na graduação em Análise e Desenvolvimento de Sistemas e atualmente trabalho como desenvolvedora fullstack em uma agência digital. Fiz cursos tanto de backend, quanto frontend e tive a oportunidade de trabalhar em equipe e desenvolver alguns projetos, que podem ser encontrados no meu GitHub. Sinta-se à vontade para entrar em contato comigo!",
-          "skills":"Habilidades",
-          "curriculum":"Currículo"
-       },
-       "projectsPage":{
-          "title":"Projetos",
-          "projects":[
-             {
-                "title":"Cotton Candy",
-                "description":"Projeto de rede social para mulheres desenvolvedoras. Desenvolvido em .NET e Angular como trabalho de conclusão para curso de formação em back-end.",
-                "url":"https://github.com/giovanaandrade/Cotton-Candy",
-                "img":"cottoncandy.png"
-             },
-             {
-                "title":"InterQuiz",
-                "description":"Quiz com perguntas e respostas, mostrando a pontuação no final. Desenvolvido em React e NextJS e deploy feito na Vercel. Projeto realizado durante Imersão da Alura",
-                "url":"http://interquiz.giovanaandrade.vercel.app/",
-                "img":"interquiz.svg"
-             },
-             {
-                "title":"Biscoito da Sorte",
-                "description":"Aplicativo que sorteia um 'biscoito da sorte' com um poema. Projeto desenvolvido em Kotlin no Android Studio para conclusão de curso de desenvolvimento de aplicativos.",
-                "url":"https://github.com/giovanaandrade/BiscoitodaSorte",
-                "img":"biscoitodasorte.png"
-             },
-             {
-                "title":"Weather App",
-                "description":"Aplicação que mostra a temperatura buscando pelo nome da cidade utilizando VueJs e API.",
-                "url":"https://giovanaandrade.github.io/vue-weather/",
-                "img":"vueweather.svg"
-             }
-          ]
-       },
-       "contactPage":{
-          "title":"Meus contatos",
-          "contacts":[
-             {
-                "class":"fab fa-linkedin-in",
-                "url":"https://www.linkedin.com/in/giovanadeandrade/"
-             },
-             {
-                "class":"fab fa-github",
-                "url":"https://github.com/giovanaandrade"
-             },
-             {
-                "class":"fab fa-medium-m",
-                "url":"http://medium.com/@giovanadandrade"
-             },
-             {
-                "class":"far fa-envelope",
-                "url":"mailto:giovanadandrade@gmail.com"
-             }
-          ],
-          "form": {
-            "name": "Seu nome",
-            "email": "Seu e-mail",
-            "message": "Me envie uma mensagem!",
-            "button": "Enviar"
-         }
-       }
+    "aboutPage": {
+      "title": "About Me",
+      "description": "I was born and live in Brazil, I'm 26 years old. I love watching Netflix, dancing and programming. My first gradution was in Psychology and currently I'm studying System Analasys and Development.",
+      "skills": "Skills",
+      "curriculum": "Curriculum"
+    },
+    "projectsPage": {
+      "title": "Projects",
+      "projects": [
+        {
+          "title": "Cotton Candy",
+          "description": "A project for a social network for women developer. Developed with .NET and Angular, it was made for the conclusion of a backend course.",
+          "url": "https://github.com/giovanaandrade/Cotton-Candy",
+          "img": "cottoncandy.png"
+        },
+        {
+          "title": "InterQuiz",
+          "description": "A quiz about football developed with React.",
+          "url": "http://interquiz.giovanaandrade.vercel.app/",
+          "img": "interquiz.svg"
+        },
+        {
+          "title": "Fortune Cookie",
+          "description": "App developed with Kotlin in Android Studio. It draws an random fortune cookie with a poem.",
+          "url": "https://github.com/giovanaandrade/BiscoitodaSorte",
+          "img": "biscoitodasorte.png"
+        },
+        {
+          "title": "Weather App",
+          "description": "Developed with VueJS and Open Weather API. It searchs the temperature for the city.",
+          "url": "https://giovanaandrade.github.io/vue-weather/",
+          "img": "vueweather.svg"
+        }
+      ]
+    },
+    "contactPage": {
+      "title": "Contact Me",
+      "contacts": [
+        {
+          "class": "fab fa-linkedin-in",
+          "url": "https://www.linkedin.com/in/giovanadeandrade/"
+        },
+        {
+          "class": "fab fa-github",
+          "url": "https://github.com/giovanaandrade"
+        },
+        {
+          "class": "fab fa-medium-m",
+          "url": "http://medium.com/@giovanadandrade"
+        },
+        {
+          "class": "far fa-envelope",
+          "url": "mailto:giovanadandrade@gmail.com"
+        }
+      ],
+      "form": {
+        "name": "Your name",
+        "email": "Your e-mail",
+        "message": "Write me a message!",
+        "button": "Send"
+      }
     }
- }
+  },
+  "portuguese": {
+    "homePage": {
+      "title": "Olá, eu sou a",
+      "description": "Desenvolvedora Full Stack"
+    },
+    "aboutPage": {
+      "title": "Sobre Mim",
+      "description": "Nasci e moro no Rio Grande do Sul, tenho 26 anos, sou viciada em Netflix, amo dançar e sou programadora. Minha trajetória profissional começou um pouco distante da tecnologia, sou graduada em Psicologia e apesar de gostar muito da área, não foi nela que me encontrei. Tive meus primeiros contatos com HTML e CSS lá pelos meus 12 anos ao estilizar um blog, mas depois deixei o meu lado curioso por tecnologia um pouco adormecido. Em 2020, comecei a fazer cursos online de programação e percebi que era isso que eu queria fazer profissionalmente. Em 2021, ingressei na graduação em Análise e Desenvolvimento de Sistemas e atualmente trabalho como desenvolvedora fullstack em uma agência digital. Fiz cursos tanto de backend, quanto frontend e tive a oportunidade de trabalhar em equipe e desenvolver alguns projetos, que podem ser encontrados no meu GitHub. Sinta-se à vontade para entrar em contato comigo!",
+      "skills": "Habilidades",
+      "curriculum": "Currículo"
+    },
+    "projectsPage": {
+      "title": "Projetos",
+      "projects": [
+        {
+          "title": "Cotton Candy",
+          "description": "Projeto de rede social para mulheres desenvolvedoras. Desenvolvido em .NET e Angular como trabalho de conclusão para curso de formação em back-end.",
+          "url": "https://github.com/giovanaandrade/Cotton-Candy",
+          "img": "cottoncandy.png"
+        },
+        {
+          "title": "InterQuiz",
+          "description": "Quiz com perguntas e respostas, mostrando a pontuação no final. Desenvolvido em React e NextJS e deploy feito na Vercel. Projeto realizado durante Imersão da Alura",
+          "url": "http://interquiz.giovanaandrade.vercel.app/",
+          "img": "interquiz.svg"
+        },
+        {
+          "title": "Biscoito da Sorte",
+          "description": "Aplicativo que sorteia um 'biscoito da sorte' com um poema. Projeto desenvolvido em Kotlin no Android Studio para conclusão de curso de desenvolvimento de aplicativos.",
+          "url": "https://github.com/giovanaandrade/BiscoitodaSorte",
+          "img": "biscoitodasorte.png"
+        },
+        {
+          "title": "Weather App",
+          "description": "Aplicação que mostra a temperatura buscando pelo nome da cidade utilizando VueJs e API.",
+          "url": "https://giovanaandrade.github.io/vue-weather/",
+          "img": "vueweather.svg"
+        }
+      ]
+    },
+    "contactPage": {
+      "title": "Meus contatos",
+      "contacts": [
+        {
+          "class": "fab fa-linkedin-in",
+          "url": "https://www.linkedin.com/in/giovanadeandrade/"
+        },
+        {
+          "class": "fab fa-github",
+          "url": "https://github.com/giovanaandrade"
+        },
+        {
+          "class": "fab fa-medium-m",
+          "url": "http://medium.com/@giovanadandrade"
+        },
+        {
+          "class": "far fa-envelope",
+          "url": "mailto:giovanadandrade@gmail.com"
+        }
+      ],
+      "form": {
+        "name": "Seu nome",
+        "email": "Seu e-mail",
+        "message": "Me envie uma mensagem!",
+        "button": "Enviar"
+      }
+    }
+  }
+}

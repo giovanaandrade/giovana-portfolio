@@ -9,7 +9,7 @@
       >
         <a :href="project.url" target="_blank">
           <img
-            class="img-projeto"
+            class="img-project"
             :src="require(`../assets/${project.img}`)"
             :alt="project.title"
           />
@@ -46,15 +46,15 @@ export default {
 }
 
 .card-project {
-  padding: 2vh;
-  width: 47%;
+  padding: 1vh;
+  width: 49%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .projects img {
-  height: 5rem;
+  height: 4rem;
 }
 
 h4 {

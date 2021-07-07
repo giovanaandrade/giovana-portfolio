@@ -57,7 +57,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -71,6 +70,7 @@ a:hover {
   color: #79cfff;
 }
 body {
+  font-size: 16px;
   color: #4f4f4f;
   font-family: "Poppins", sans-serif;
   background: rgb(90, 13, 92);
